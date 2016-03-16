@@ -1,8 +1,8 @@
 body {
-  background-color: #E3E3E3;
+  background-color: #7D7D7D;
   font-family: 'Avenir', helvetica, arial, 'lucida grande', sans-serif;
   font-size: 22px;
-  margin: 0 75px;
+  margin: 0 9%;
   padding: 0;
 }
 
@@ -45,18 +45,22 @@ p {
 header {
 	background: url(images/ottumwa_bridge.jpg) center center no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 400px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
 }
 
 
 header .container	img {
-	margin: 35px 0 0 35px;
+	margin: 35px 0 0 75px;
 }
 
 
 /*===== NAVIGATION ====*/
+
+.top-nav {
+  padding-left: 75px;
+}
 
 .navbar {
   border: none;
@@ -108,49 +112,47 @@ main .row {
 
 .image	{
   border: 4px solid;
-  border-radius: 100%;
+  border-radius: 10%;
+  height: 100%;
+  margin-top: 5%;
+
 }
 
 .img-responsive {
   display: inline;
 }
 
-.the_market {
+.red_yellow_green_container {
   background-color: #B1715B;
   border-top: 4px solid #9BAA4C;
   color: #F3B435;
 }
 
-.the_market .image{
+.red_yellow_green_container .image{
   border-color: #F3B435;
 }
 
 
-.music {
+.green_red_yellow_container {
   background-color: #AFBB70;
   border-top: 4px solid #F3B435;
   color: #9E4D32;
 }
 
-.music .image {
+.green_red_yellow_container.image {
   border-color: #9E4D32;
 }
 
-.art_club {
+.yellow_green_red_container {
   background-color: #F5C35D;
   border-top: 4px solid #9E4D32;
   color: #849141;
 }
 
-.art_club .image {
+.yellow_green_red_container.image {
   border: none;
 }
 
-.wine_weds {
-  background-color: #B1715B;
-  border-top: 4px solid #9BAA4C;
-  color: #F3B435;
-}
 
 
 /*===== FOOTER =====*/
@@ -196,13 +198,40 @@ footer .nav-pills>li.active>a:focus, footer .nav-pills>li.active>a:hover {
 
 /*===== MEDIA QUERIES =====*/
 
+
+@media screen and (min-width: 1675px) {
+  .image {
+    margin-top: 0;
+  }  
+}
+
+@media (max-width: 1575px) {
+  .col-md-6 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section {
+    margin: 0 70px;
+  }
+}
+
 @media screen and (max-width: 994px) {
+  
+  body {
+    margin: 0 7%;
+  }
+
   .text-center {
     text-align: right;
   }
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    margin: 0 5%;
+  }
+
   .navbar-default .navbar-nav>li>a {
     padding-top: 5px;
   }
@@ -222,6 +251,7 @@ footer .row {
   }
 }
 
+
 @media screen and (max-width: 550px) {
   
   header .container img {
@@ -238,8 +268,12 @@ footer .row {
 }
 
 @media (max-width: 500px) {
+  
+  body {
+    margin: 0 3%;
+  }
+
   .col-md-6 img {
-    padding: 50px;
     width: 100%;
   }
 
@@ -255,3 +289,11 @@ footer .row {
     margin: 0 0px;
   } 
 }
+
+@media (max-width: 400px) {
+  
+  body {
+    margin: 0 0;
+  }
+
+  }
