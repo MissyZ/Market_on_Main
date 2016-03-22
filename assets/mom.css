@@ -15,7 +15,7 @@ body {
   margin: 0;
 }
 
-.section {
+section {
   margin: 0 75px;
 }
 
@@ -72,6 +72,10 @@ header .container	img {
     margin-right: 0;
 }
 
+.top-nav .navbar-toggle {
+    margin-right: 10px;
+}
+
 .navbar .navbar-default {
   margin-bottom: 0;
 }
@@ -91,16 +95,26 @@ header .container	img {
     padding-top: 25px;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    background-color: #695A53;
-    color: #9BAA4C;
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-collapse>.active>a:focus,
+.navbar-default .navbar-collapse>.active>a:hover,  
+.navbar-default .navbar-form>.active>a:focus,
+.navbar-default .navbar-form>.active>a:hover {
+    background-color: #75645C;
+    color: #F3B435;
     height: 75px;
 
 }
 
-.navbar-toggle, .navbar-default .navbar-toggle {
+.navbar-toggle, 
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
   border-color: #695A53;
 }
+
 
 
 /*===== HOME PAGE =====*/
@@ -110,7 +124,8 @@ main .row {
   padding-bottom: 30px;
 }
 
-.image	{
+.image, 
+.image-round	{
   border: 4px solid;
   border-radius: 10%;
   height: 100%;
@@ -128,7 +143,8 @@ main .row {
   color: #F3B435;
 }
 
-.red_yellow_green_container .image{
+.red_yellow_green_container .image,
+.red_yellow_green_container .image-round{
   border-color: #F3B435;
 }
 
@@ -139,7 +155,8 @@ main .row {
   color: #9E4D32;
 }
 
-.green_red_yellow_container.image {
+.green_red_yellow_container .image,  
+.green_red_yellow_container .image-round {
   border-color: #9E4D32;
 }
 
@@ -149,11 +166,54 @@ main .row {
   color: #849141;
 }
 
-.yellow_green_red_container.image {
-  border: none;
+.yellow_green_red_container .image,
+.yellow_green_red_container .image-round  {
+  border-color: #849141;
 }
 
 
+
+/*===== OUR STAFF =====*/
+
+.image-round {
+  border-radius: 100%;
+}
+
+
+
+/*===== VENDOR PAGE ======*/
+
+.vendor-def h1 {
+  font-size: 2.18em;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.vendor-def h3 {
+  font-size: 1.45em;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+
+.vendor-def p {
+  font-weight: normal;
+}
+
+.vendor-list span {
+  font-size: 1.45em;
+  font-weight: 600;
+}
+
+.vendor-info-request h2 {
+  font-size: 1.81em;
+  font-weight: 300;
+}
+
+.vendor-info-request p {
+  font-weight: normal;
+}
 
 /*===== FOOTER =====*/
 
@@ -192,7 +252,8 @@ footer .navbar-nav>li>a {
   color: #9BAA4C;
 }
 
-footer .nav-pills>li.active>a:focus, footer .nav-pills>li.active>a:hover {
+footer .nav-pills>li>a:focus, 
+footer .nav-pills>li>a:hover {
   background: blue; 
 }
 
@@ -211,7 +272,7 @@ footer .nav-pills>li.active>a:focus, footer .nav-pills>li.active>a:hover {
     padding-right: 20px;
   }
 
-  .section {
+  section {
     margin: 0 70px;
   }
 }
@@ -258,7 +319,7 @@ footer .row {
     margin: 30px 0 0 0;
   }
 
-  .section {
+  section {
     margin: 0 20px;
   }
 
@@ -285,7 +346,7 @@ footer .row {
     margin: 0 0 0px;
   }
 
- .section {
+ section {
     margin: 0 0px;
   } 
 }
